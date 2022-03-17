@@ -134,12 +134,34 @@ p{
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 
     transition: background .2s linear;
 }
 
 .btn--red{
     background-color: #e84545;
+}
+
+.btn-dwn{
+    min-width: 280px;
+    
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 50px;
+
+    border: 0;
+
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+
+    cursor: pointer;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn--red:hover{
@@ -304,6 +326,12 @@ p{
     display: flex;
 }
 
+.ico--footer{
+    display: flex;
+    justify-content: center;
+    background-color: none;
+}
+
 .ico__item{
     display: flex;
     justify-content: center;
@@ -323,6 +351,17 @@ p{
     background-color: #e8ecee; 
 }
 
+.ico--footer .ico__item{
+    background: transparent;
+    border-width: 2px;
+    border-color: #fff;  
+    border-radius: 2px;
+}
+
+.ico--footer .ico__item:hover{
+    background-color: #fff;
+}
+
 .ico__item:hover .ico__ico{
     fill: #dd3434;
     opacity: 0.9;
@@ -335,6 +374,10 @@ p{
     height: 18px;
 
     transition: fill .2s linear;
+}
+
+.ico--footer .ico__ico{
+    fill: #fff
 }
 
 /* Reviews */
@@ -387,21 +430,80 @@ p{
     color: #fff;
 }
 
+/* Download */
+.download{
+    margin: 90px 0;
+    text-align: center;
+}
 
+.download__title{
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: #2d3033;
 
+    margin-bottom: 8px;
+}
 
+.download__text{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d3033;
 
+    margin-bottom: 35px;
+}
 
+/* Footer */
+.footer{
+    background-color: #3a3e64;
+}
 
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
 
+    padding: 70px 0;
+}
 
+.footer__item{
+    width: 33.3333%;
+    text-align: center;
+    padding: 0 20px;
+}
 
+.footer__title{
+    margin-bottom: 10px;
 
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
 
+.footer__adress{
+    line-height: 22.5px;
+    font-size: 14px;
+    font-style: normal;
+    color: rgb(255, 255, 255, .5);
+}
 
+.footer__copyright{
+    background-color: #313454;
+    padding: 20px 0 ;
+}
 
+.copy_text{
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    line-height: 22.5px;
+}
 
-
+.copy_text span{
+    color: #fff;
+}
 
 
 
