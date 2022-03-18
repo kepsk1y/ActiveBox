@@ -107,7 +107,7 @@ p{
     text-transform: uppercase;
 }
 
-.intro__subtitle{
+.intro__suptitle{
     margin-bottom: 60px;
     
     font-size: 22px;
@@ -144,7 +144,7 @@ p{
 }
 
 .btn-dwn{
-    min-width: 280px;
+    min-width: 260px;
     
     display: inline-block;
     vertical-align: top;
@@ -221,6 +221,7 @@ p{
 }   
 
 .works__img{
+    min-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -504,6 +505,90 @@ p{
 .copy_text span{
     color: #fff;
 }
+
+/* Burger */
+.burger{
+    display: none;
+    background: none;
+    border: none;
+    padding: 9px 2px;
+
+    cursor: pointer;
+}
+
+.burger__item{
+    display: block;
+    width: 30px;
+    height: 3px;
+
+    font-size: 0;
+    color: transparent;
+
+    background-color: #fff;
+
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+ 
+.burger__item:before{
+    top: -8px;
+}
+
+.burger__item:after{
+    bottom: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
