@@ -38,6 +38,7 @@ $(function() {
             scrollTop: elementOffset - 70
         }, 800);
 
+        
     });
 
     // Nav Toggle
