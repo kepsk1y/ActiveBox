@@ -7,6 +7,6 @@ How I did it - I found a video of how a professional markup a website, downloade
 
 When I didn’t know how to make this or that block, I turned to Google for help, if I didn’t find the necessary information, I watched how a person does it in a video.
 
-Link to the site - https://kepsk1y.github.io/MOGO/
+Link to the site - https://kepsk1y.github.io/ActiveBox/
 
 Link to the video - https://www.youtube.com/watch?v=b8K_iowSriQ&ab_channel=BrainsCloud
