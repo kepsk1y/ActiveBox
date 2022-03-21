@@ -52,12 +52,29 @@ p{
     padding: 35px 0;
 }
 
+.header.fixed{
+    position: fixed;
+
+    height: auto;
+
+    background-color: #31344e;
+}
+
+.header.fixed .header__inner{
+    padding: 15px 0;
+    border: 0;
+}
+
 /* Nav */
 .nav{
     font-size: 15px;
     display: flex;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.nav.show{
+    display: flex;
 }
 
 .nav__link{
@@ -390,6 +407,11 @@ p{
 .reviews__item{
     display: flex;
     flex-wrap: wrap;
+}
+
+.reviews__slider{
+    height: 500px;
+    overflow: hidden;
 }
 
 .reviews__photo{

@@ -17,6 +17,17 @@
     /* Nav */
     .nav{
         display: none;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        background-color: #31344e;
+    }
+
+    .nav__link{
+        padding: 7px 15px;
     }
 
     /* Intro */

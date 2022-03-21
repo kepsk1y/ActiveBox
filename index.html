@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/media.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +30,7 @@
     </svg>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 
@@ -36,15 +38,15 @@
                     <img src="assets/img/activebox-logo.png" alt="Logo">
                 </div>
             
-                <nav class="nav">
-                    <a class="nav__link" href="#">features</a>
-                    <a class="nav__link" href="#">works</a>
-                    <a class="nav__link" href="#">our team</a>
-                    <a class="nav__link" href="#">testimonials</a>
-                    <a class="nav__link" href="#">download</a>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#features">features</a>
+                    <a class="nav__link" href="#" data-scroll="#works">works</a>
+                    <a class="nav__link" href="#" data-scroll="#ourteam">our team</a>
+                    <a class="nav__link" href="#" data-scroll="#testimonials">testimonials</a>
+                    <a class="nav__link" href="#" data-scroll="#download">download</a>
                 </nav>
             
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="navToggle">
                     <span class="burger__item">Menu</span>
                 </button>
             </div>
@@ -52,7 +54,7 @@
     </header>
 
     <!-- Intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
@@ -63,7 +65,7 @@
     </div>
 
     <!-- Features -->
-    <div class="container">
+    <div class="container" id="features">
         <div class="features">
             <div class="features__item first-st">
                  <img class="features__ico" src="assets/img/features/feature-1.png" alt="Pic-1">
@@ -100,7 +102,7 @@
     </div>
 
     <!-- Works -->
-    <div class="works">
+    <div class="works" id="works">
         <div class="works__item">
             <img class="works__img" src="assets/img/works/work-1.jpg" alt="work-1">
             <div class="works__content">
@@ -161,7 +163,7 @@
     </div>
 
     <!-- Team -->
-    <div class="container">
+    <div class="container" id="ourteam">
         <div class="team">
             <div class="team__inner">
                 
@@ -286,22 +288,39 @@
     </div>
 
     <!-- Reviews -->
-    <div class="reviews">
+    <div class="reviews" id="testimonials">
         <div class="container">
-            <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img class="reviews__img" src="assets/img/reviews/review-1.jpg" alt="review-1">
+            
+            <div class="reviews__slider" id="reviewsslider">
+                <div class="slick--item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="assets/img/reviews/review-1.jpg" alt="review-1">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat explicabo impedit id nostrum nisi minus tempore?"</div>
+                            <div class="reviews__author">Dimitriy Zdrok</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="reviews__content">
-                    <div class="reviews__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat explicabo impedit id nostrum nisi minus tempore?"</div>
-                    <div class="reviews__author">Dimitriy Zdrok</div>
+                
+                <div class="slick--item"> 
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="assets/img/reviews/review-1.jpg" alt="review-1">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">"Lorem ore?"</div>
+                            <div class="reviews__author">Dmitriy Zdrok</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 
     <!-- Download -->
-    <div class="download">
+    <div class="download" id="download">
         <div class="container">
             <div class="download__title">
                 Are you ready to start? Download Now for Free!
@@ -368,6 +387,10 @@
                 </div>
         </div>
     </footer>
+
+    <!-- Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
