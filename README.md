@@ -1,5 +1,5 @@
 # ActiveBox
-The second one template for gainning more experience. CSS + HTML
+Template for gainning more experience. CSS + HTML
 
 To create this template, I used HTML, CSS, and a bit of JS.
 
